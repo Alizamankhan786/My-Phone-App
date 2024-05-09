@@ -69,18 +69,18 @@ const phones = [
 let arr = [];
 
 
-const div = document.querySelector('#card');
+const div = document.querySelector('.header');
 
     for (let i = 0; i < phones.length; i++) {
         console.log(phones[i]);
 
     div.innerHTML += `
-        <div class="card bg-dark text-light border-light d-flex mt-3 " style="width: 18rem;">
+        <div class="card bg-dark text-light border-light " style="width: 18rem;">
             <div class="card-body">
             <h5 class="card-title">${phones[i].brand}</h5>
             <p class="card-text">${phones[i].model}</p>
             <p class="card-text">${phones[i].price}</p>
-            <button class="" onclick="gotocart(${i})">AddToCart</button>
+            <button onclick="gotocart(${i})">AddToCart</button>
     </div>
     </div>
     `
@@ -94,6 +94,7 @@ function renderItems(){
 
 
 function gotocart(){
+    console.log(`cart`);
     window.location.href = `cart.html`
 }
 
