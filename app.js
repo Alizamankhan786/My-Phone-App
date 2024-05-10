@@ -100,6 +100,7 @@ const div = document.querySelector('.header');
 
 
  renderItems()
+
  
 
 
