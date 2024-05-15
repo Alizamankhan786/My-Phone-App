@@ -94,5 +94,5 @@ function deletecartItems(index){
 
 function gotohome(){
     window.location = `index.html`;
-    localStorage.setItem
+    localStorage.setItem(`cartItems` , JSON.stringify(cartItems));
 }
