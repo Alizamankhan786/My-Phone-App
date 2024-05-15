@@ -79,6 +79,8 @@ if(items === null){
 
 const div = document.querySelector('.header');
 
+function renderItems(){
+
     for (let i = 0; i < phones.length; i++) {
         console.log(phones[i]);
 
@@ -91,11 +93,12 @@ const div = document.querySelector('.header');
             <h5 class="card-text">Rom: ${phones[i].rom}</h5>
             <h5 class="card-text">Camera: ${phones[i].camera}</h5>
             <h5 class="card-text">Price: ${phones[i].price}</h5>
-            <button onclick="gotocart(${i})" class="btn btn-primary">AddToCart</button>
+            <button onclick="addtocart(${i})" class="btn btn-primary">AddToCart</button>
     </div>
     </div>
     `
     }
+}
 
 
 
