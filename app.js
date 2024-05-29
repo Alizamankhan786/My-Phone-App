@@ -82,7 +82,7 @@ const div = document.querySelector('.header');
 function renderItems(){
 
     for (let i = 0; i < phones.length; i++) {
-        console.log(phones[i]);
+        // console.log(phones[i]);
 
     div.innerHTML += `
         <div class="card bg-dark text-light border-light " style="width: 18rem;">

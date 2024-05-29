@@ -34,7 +34,7 @@ function renderItems(){
             </div>
             `
             totalamount.innerHTML = `
-            <h1 class = "text-light text-center">Total Amount</h1>
+            <h1 class = "text-light text-center">Total Amount = ${totalamount}</h1>
             `
         }
     }else{
